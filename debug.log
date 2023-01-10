@@ -1,0 +1,8 @@
+[0923/002213.640:ERROR:file_io.cc(90)] ReadExactly: expected 896, observed 0
+[0923/002213.645:ERROR:crash_report_database_win.cc(447)] failed to read records
+[0928/205606.501:ERROR:file_io.cc(90)] ReadExactly: expected 896, observed 0
+[0928/205606.501:ERROR:crash_report_database_win.cc(447)] failed to read records
+[0928/205616.630:ERROR:file_io.cc(90)] ReadExactly: expected 896, observed 0
+[0928/205616.630:ERROR:crash_report_database_win.cc(447)] failed to read records
+[0928/205630.763:ERROR:file_io.cc(90)] ReadExactly: expected 896, observed 0
+[0928/205630.763:ERROR:crash_report_database_win.cc(447)] failed to read records

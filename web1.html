@@ -1,0 +1,80 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="client.css">
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    <title>TNMG Communications</title>
+    <!--RTCMulticonnection-->
+    <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.js"></script>
+    <script src="https://cdn.webrtc-experiment.com/FileBufferReader.js"></script>
+    <!-- socket.io for signaling -->
+    <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="main-div">
+
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12" id="video-bar">
+                <div id="videos-container"></div>
+                <div id="bottomBar">
+
+                    <!--<form action="/logout?_method=DELETE" method="POST">-->
+                    <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="btn btn-light">Logout</button>
+                    </form>
+                    <button id="hideVideo"><img src="images/noShow.png"></button>
+                    <button id="showVideo"><img src="images/show.png"></button>
+
+
+
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12" id="control-bar">
+                <div id="room-management">
+
+                    <b>Welcome </b><span id="name">webRTCTest2</span>
+                    <input type="text" id="room-id" class="form-control" placeholder="enter room name">
+                    <button id="open-room" class="btn btn-primary fullWidth">open room</button>
+                    <button id="join-room" class="btn btn-success fullWidth">Join room</button>
+                    <!--<button id="open-or-join-room" class="btn btn-primary fullWidth">Open or join room</button>-->
+                    <button id="leave-room" class="btn btn-success fullwidth">Leave meeting</button>
+                </div>
+
+                <div id="room-urls">
+                    <div id="message-part"></div>
+                    <input type="text" id="url-part" class="form-control">
+                    <button id="copyButton" class="btn btn-info">Copy</button>
+                </div>
+                <div id="onlineList">
+                    <ul id="usersList"></ul>
+                </div>
+                <div id="onUserStatusChanged"></div>
+
+                <div class="chatArea" id="chatArea">
+                    <div id="chatOutput" class="chat-output"></div>
+                    <div class="chatText">
+                        <input class="form-control" type="text" placeholder="your message..." id="chatMessage">
+                        <button class="btn btn-primary" type="button" id="groupSend">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="images/Redeem1.png" style="width:20%;height:auto" align="Right">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--WRTC START-->
+    <script src="https://www.webrtc-experiment.com/common.js"></script>
+    <script src="client.js"></script>
+    <script src="chat.js"></script>
+    <!--WRTC ENF-->
+</body>
+</html>

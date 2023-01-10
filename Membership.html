@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- First & Last Name - Number#  -->
+<html lang="en">
+<head>
+<title>MEMBERSHIP</title>
+<!-- Bootstrap Code to enhance view on different screen sizes-->
+<meta name="windowsize" content="width=device-width, initial-scale=1" charset=utf-8" /> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- bootstrap code end-->
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="index.html">the progress restaurant</a></h1>
+                <p>serving our customers</p>
+            </div>
+            
+        </div>
+        <div id="menu" class="container">
+
+                
+
+            <!-- navigation bar with dropdown menu -->
+            	<ul>
+            	  <li><a href="index.html">HOME</a></li>
+            	  <li><a href="About.html">ABOUT</a></li>
+            	  <li><a href="List.html">MENU LIST</a>
+            	    <ul class="dropdown">
+            	      <a href="calendar.html">CALENDAR</a>
+            	      <a href="gallery.html">GALLERY</a>
+            		</ul>
+            	  </li>
+            	  <li><a href="Estimate.html">ESTIMATE</a></li>
+            	  <li><a href="Membership.html">SIGN UP</a></li>
+            	  <li><a href="puzzle.html">PUZZLE</a></li>
+            	  
+            	</ul>
+
+            
+            
+        </div>
+    </div>
+                
+
+
+                    <br />
+
+                                        
+                    
+
+                    
+                    <div id="portfolio" class="container">
+                        
+                        <div class="container">
+                            <br />
+                            
+                    <article>
+                    <h2>MEMBERSHIP REGISTRATION</h2>
+                    <form action="connect.php" method="post" onSubmit="return setUpPages();">
+                        <!--<form onSubmit="return setUpPages();">-->
+                            <fieldset class="text">
+                                <label for="fname">Firstname</label>
+                                <input type="text" id="fname" name="fname"/>
+                                <p id="fnameError" class="errorMsg"></p>
+
+                                <label for="lname">Lastname</label>
+                                <input type="text" id="lname" name="lname"/>
+                                <p id="lnameError" class="errorMsg"></p>
+                                <br>
+
+                                <label for="age">Age</label>
+                                <input type="text" id="age" name="age" />
+                                <p id="ageError" class="errorMsg"></p>
+                                <br>
+
+                                <label for="pw1">Password</label>
+                                <input type="password" id="pw1" name="pw1" />
+                                <p id="pw1Error" class="errorMsg"></p>
+
+                                <br>
+                                <label for="pw2">Password (confirm)</label>
+                                <input type="password" id="pw2" name="pw2" />
+                                <p id="pw2Error" class="errorMsg"></p>
+
+                                <label for="email">Email Address</label>
+                                <br>
+                                <input type="email" id="emailbox" name="emailbox" />
+                                <p id="emailError" class="errorMsg"></p>
+                                <br>
+
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" />
+                                <p id="addressError" class="errorMsg"></p>
+                                <br>
+
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" />
+                                <p id="cityError" class="errorMsg"></p>
+                                <br>
+
+                                <label for="province">Province</label>
+                                <select type="text" id="province" name="province" placeholder="province">
+                                    <option value=""></option>
+                                    <option value="AB">AB</option>
+                                    <option value="BC">BC</option>
+                                    <option value="MB">MB</option>
+                                    <option value="ON">ON</option>
+                                    <option value="QC">QC</option>
+                                </select>
+                                <p id="provinceError" class="errorMsg"></p>
+
+                                <br>
+                                <br>
+
+                                <label for="postcode">PostCode</label>
+                                <input type="text" id="postalcode" name="postalcode"/>
+                                <p id="postalcodeError" class="errorMsg"></p>
+
+                            </fieldset>
+
+                            <p>
+                                <input type="button" id="submit" value="Register Now" onclick="setUpPages()" />
+                            </p>
+                            <p>
+                                <input type="reset" id="reset" value="Clear">
+                            </p>
+
+                        </form>
+
+
+
+                        <section id="profile">
+                            <h3>Profile</h3>
+
+                            <p>
+                                Thanks for registering with our website.
+                                Your customer record was created successfully!
+                            </p>
+
+                            <div id="firstnameSection">
+                                <h4>Firstname</h4>
+                                <p id="profileFirstname"></p>
+                            </div>
+
+                            <div id="lastnameSection">
+                                <h4>Lastname</h4>
+                                <p id="profileLastname"></p>
+                            </div>
+
+                            <div id="AgeSection">
+                                <h4>Age</h4>
+                                <p id="profileAge"></p>
+                            </div>
+
+                            <div id="emailSection">
+                                <h4>Email address</h4>
+                                <p id="profileEmail"></p>
+                            </div>
+
+                            <div id="AddressSection">
+                                <h4>Address</h4>
+                                <p id="profileAddress"></p>
+                            </div>
+
+                            <div id="CitySection">
+                                <h4>City</h4>
+                                <p id="profileCity"></p>
+                            </div>
+
+                            <div id="ProvinceSection">
+                                <h4>Province</h4>
+                                <p id="profileProvince"></p>
+                            </div>
+
+                            <div id="PostalSection">
+                                <h4>Postal Code</h4>
+                                <p id="profilePostal"></p>
+                            </div>
+
+
+
+
+
+                        </section>
+</article>
+                
+                   
+                   
+                  </div>
+                  </div>                     
+                    
+				
+            <br />
+        </div>
+    
+    </div>
+</div>   
+</div>         
+                <br />
+
+            <div id="menu" class="container">
+
+                <ul>
+                    <li><a href="#" class="fa fa-twitter"><span> Twitter</span></a></li>
+                    <li><a href="#" class="fa fa-facebook"><span> Facebook</span></a></li>
+                    <li><a href="#" class="fa fa-rss"><span> RSS feed </span></a></li>
+                </ul>
+
+            </div>
+
+<div id="footer">
+
+<p>&copy; 2019 Progress Restaurant. All Rights Reserved.</p>
+    
+
+
+</div>
+
+            
+
+
+</body>
+
+<script src="java/Membership.js" type="text/javascript"></script>
+
+</html>

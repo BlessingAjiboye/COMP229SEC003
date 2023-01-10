@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 5
+      Chapter case
+
+      Photo zoom
+      Author: 
+      Date:   
+
+      Filename: zoom.htm
+   -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Full size photo</title>
+   <link href="css/zoom.css" rel="stylesheet" type="text/css" media="all" />
+
+   <!--[if lt IE 9]>
+      <link rel="stylesheet" href="zoomie.css" />
+   <![endif]-->
+</head>
+
+<body>
+
+      <figure>
+      <img onclick="  src="" width="960" height="540" />
+   </figure> 
+
+   <footer>
+      <div><button onclick="closeWin()">Close</button></div>
+   </footer>
+
+ <script src="java/zoom.js" type="text/javascript">
+    
+
+    /* global variables */
+var photoOrderArray = window.opener.photoOrder;
+var figFilename = "images/IMG_0" + photoOrderArray[2] + ".jpg";
+
+/* populate img element and create event listener */
+function pageSetup() {
+   document.getElementsByTagName("img")[0].src = figFilename; // assign filename to img element
+   createEventListener();
+}
+ </script>
+
+
+</body>
+</html>

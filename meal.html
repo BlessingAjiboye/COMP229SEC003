@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>Image:</div>
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" id="Image" name="Image">
+        <label class="custom-file-label" for="Image">Choose image</label>
+    </div>
+
+    <label class="control-label" for="ProductName">Product Name: </label>
+    <input class="form-control" type="text" id="ProductName" name="ProductName" value="" />
+
+    <label class="control-label" for="Price">Price: </label>
+    <input type="number" step=".01" class="form-control" data-val="true" data-val-number="The field Price:  must be a number." data-val-required="The Price:  field is required." id="Price" name="Price" value="" />
+
+    <label class="control-label" for="Description">Description: </label>
+<textarea class="form-control" id="Description" name="Description">
+</textarea>
+    
+</body>
+</html>

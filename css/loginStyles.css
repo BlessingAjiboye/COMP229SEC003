@@ -1,0 +1,43 @@
+﻿body {
+    background-color: #4B0082;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-col {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box {
+    width: 80%;
+    padding: 45px;
+    box-shadow: 2px 3px 2px 2px #9932CC;
+    background-color: black;
+    border-radius: 5px;
+    color: #c0c0c0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+#login {
+    text-align: center;
+}
+
+textarea {
+    background-color: gray !important;
+}
